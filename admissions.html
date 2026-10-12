@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mamta Memorial Junior High School — learning, curiosity and a brighter future.">
+  <title>MMJHS Bandipur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="top-strip">
+    <div class="top-inner">
+      <span><span class="top-icon">☎</span>+91 9919743085</span>
+      <span><span class="top-icon">☎</span>+91 8004623475</span>
+      <a href="#"><span class="top-icon">✉</span>mmps0027@gmail.com</a>
+      <span class="top-address">📍 Bandipur, Ambedkar Nagar, (UP) 224125</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="base.html" aria-label="School homepage">
+      <span class="logo-mark" aria-hidden="true"><span>MM</span><small>JHS</small></span>
+      <span class="brand-text"><strong>MAMTA MEMORIAL</strong><b>JUNIOR HIGH SCHOOL</b><small>LEARN • GROW • SHINE</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="{{ 'active' if title == 'Home' else '' }}" href="base.html">Home</a>
+      <a class="{{ 'active' if title == 'About Us' else '' }}" href="about.html">About Us</a>
+      <a class="{{ 'active' if title == 'Academics' else '' }}" href="academics.html">Academics</a>
+      <a class="{{ 'active' if title == 'Admissions' else '' }}" href="admissions.html">Admissions</a>
+      <a class="{{ 'active' if title == 'Facilities' else '' }}" href="facilities.html">Facilities</a>
+      <a class="{{ 'active' if title == 'Gallery' else '' }}" href="gallery.html">Gallery</a>
+      <a class="{{ 'active' if title == 'Contact' else '' }}" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline switch-btn" href="switch_school.html"><span aria-hidden="true">⇄</span> Switch School</a>
+      <a class="btn btn-primary" href="login.html">Login <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+<section class="page-hero">
+    <span class="eyebrow">ADMISSIONS</span>
+    <h1>Start their next<br>
+        <span>big adventure.</span>
+    </h1>
+    <p>Share a few details and our school team can guide you through the enquiry process.</p>
+    <div class="page-hero-deco">🎒 ✏️ 🌟</div>
+</section>
+<section class="section wrap admissions-layout">
+    <div class="admission-info">
+        <span class="eyebrow">JOIN OUR SCHOOL COMMUNITY</span>
+        <h2>One small step.<br>
+            <span>A world of possibilities.</span>
+        </h2>
+        <p>We welcome families who value a supportive learning environment and a strong educational foundation.</p>
+        <div class="admission-step">
+            <span>01</span>
+            <div><b>Send an enquiry</b>
+                <small>Complete the form with your contact details.</small>
+            </div>
+        </div>
+        <div class="admission-step">
+            <span>02</span>
+            <div>
+                <b>Speak with the school</b>
+                <small>Ask questions about classes and the admission process.</small>
+            </div>
+        </div>
+        <div class="admission-step">
+            <span>03</span>
+            <div>
+                <b>Visit and learn more</b>
+                <small>Confirm the required documents and next steps with the office.</small>
+            </div>
+        </div>
+        <p class="small-note">Class availability and admission requirements should be confirmed directly with the school office.</p>
+    </div>
+    <form class="form-card" method="post">
+        <h2>Admission Enquiry</h2>
+        <p class="muted">Fields marked * are required.</p>
+        <label>Student's full name *</label>
+        <input required name="student_name" placeholder="Enter student name">
+        <label>Parent / Guardian name *</label>
+        <input required name="guardian_name" placeholder="Enter parent or guardian name">
+        <div class="form-row">
+            <div>
+                <label>Contact number *</label>
+                <input required name="phone" inputmode="tel" pattern="[0-9+ ()-]{7,20}" placeholder="+91">
+            </div>
+            <div>
+                <label>Class applying for *</label>
+                <select required name="grade">
+                    <option value="">Select class</option>{% for c in ['Nursery','LKG','UKG','1','2','3','4','5','6','7','8','9'] %}
+                    <option value="Nursery">Nursery</option>
+                    <option value="LKG">LKG</option>
+                    <option value="UKG">UKG</option>
+                    <option value="Class- 1">Class- 1</option>
+                    <option value="Class- 2">Class- 2</option>
+                    <option value="Class- 3">Class- 3</option>
+                    <option value="Class- 4">Class- 4</option>
+                    <option value="Class- 5">Class- 5</option>
+                    <option value="Class- 6">Class- 6</option>
+                    <option value="Class- 7">Class- 7</option>
+                    <option value="Class- 8">Class- 8</option>
+                    <option value="Class- 9">Class- 9</option>
+                    <option value="Class- 10">Class- 10</option>
+                    
+                </select>
+            </div>
+        </div>
+        <label>Message (optional)</label>
+        <textarea name="message" rows="3" placeholder="Any question for the school?"></textarea>
+        <button class="btn btn-primary btn-large form-submit" type="submit">Send Enquiry ↗</button>
+        <small class="form-footnote">Demo form: submissions are not saved to a database.</small>
+    </form>
+</section>
+
+
+      <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a class="brand footer-brand" href="base.html">
+          <span class="logo-mark">
+            <span>MM</span>
+            <small>JHS</small>
+          </span>
+          <span class="brand-text">
+            <strong>MAMTA MEMORIAL</strong>
+            <b>JUNIOR HIGH SCHOOL</b>
+            <small>LEARN • GROW • SHINE</small>
+          </span>
+        </a>
+        <p>Building strong foundations through curiosity, character and quality education.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="about.html">About the School</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>+91 9919743085</p>
+        <p>+91 8004623475</p>
+        <a href="#">mmps0027@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mamta Memorial Junior High School</span>
+      <span>Made for learning, design by Ismart Digital Solutions. <span>
+        <span class="top-icon">☎</span>+91 8948143511</span>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>

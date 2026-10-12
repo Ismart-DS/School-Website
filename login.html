@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mamta Memorial Junior High School — learning, curiosity and a brighter future.">
+  <title>MMJHS Bandipur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="top-strip">
+    <div class="top-inner">
+      <span><span class="top-icon">☎</span>+91 9919743085</span>
+      <span><span class="top-icon">☎</span>+91 8004623475</span>
+      <a href="#"><span class="top-icon">✉</span>mmps0027@gmail.com</a>
+      <span class="top-address">📍 Bandipur, Ambedkar Nagar, (UP) 224125</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="base.html" aria-label="School homepage">
+      <span class="logo-mark" aria-hidden="true"><span>MM</span><small>JHS</small></span>
+      <span class="brand-text"><strong>MAMTA MEMORIAL</strong><b>JUNIOR HIGH SCHOOL</b><small>LEARN • GROW • SHINE</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="{{ 'active' if title == 'Home' else '' }}" href="base.html">Home</a>
+      <a class="{{ 'active' if title == 'About Us' else '' }}" href="about.html">About Us</a>
+      <a class="{{ 'active' if title == 'Academics' else '' }}" href="academics.html">Academics</a>
+      <a class="{{ 'active' if title == 'Admissions' else '' }}" href="admissions.html">Admissions</a>
+      <a class="{{ 'active' if title == 'Facilities' else '' }}" href="facilities.html">Facilities</a>
+      <a class="{{ 'active' if title == 'Gallery' else '' }}" href="gallery.html">Gallery</a>
+      <a class="{{ 'active' if title == 'Contact' else '' }}" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline switch-btn" href="switch_school.html"><span aria-hidden="true">⇄</span> Switch School</a>
+      <a class="btn btn-primary" href="login.html">Login <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+
+<section class="login-shell">
+  <div class="login-decoration">
+    <span class="login-float f1">📚</span>
+    <span class="login-float f2">✏️</span>
+    <span class="login-float f3">✨</span>
+    <span class="eyebrow">MMJHS PORTAL</span>
+    <h1>Welcome<br>
+      <span>back!</span>
+    </h1>
+    <p>School portal access for authorised users. Secure sign-in must be configured by the website administrator.</p>
+  </div>
+  <form class="form-card login-card" method="post">
+    <div class="login-logo">MM</div>
+    <h2>Sign in to your account</h2>
+    <p class="muted">Demo screen — authentication is not enabled.</p>
+    <label>Username / Mobile number</label>
+    <input required name="username" placeholder="Enter username or mobile">
+    <label>Password</label>
+    <input required type="password" name="password" placeholder="Enter password">
+    <button class="btn btn-primary btn-large form-submit" type="submit">Login ↗</button>
+    <a class="back-home" href="base.html">← Back to homepage</a></form></section>
+
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a class="brand footer-brand" href="base.html">
+          <span class="logo-mark">
+            <span>MM</span>
+            <small>JHS</small>
+          </span>
+          <span class="brand-text">
+            <strong>MAMTA MEMORIAL</strong>
+            <b>JUNIOR HIGH SCHOOL</b>
+            <small>LEARN • GROW • SHINE</small>
+          </span>
+        </a>
+        <p>Building strong foundations through curiosity, character and quality education.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="about.html">About the School</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>+91 9919743085</p>
+        <p>+91 8004623475</p>
+        <a href="#">mmps0027@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mamta Memorial Junior High School</span>
+      <span>Made for learning, design by Ismart Digital Solutions. <span>
+        <span class="top-icon">☎</span>+91 8948143511</span>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
