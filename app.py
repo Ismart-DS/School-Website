@@ -6,10 +6,10 @@ app.secret_key = "change-this-secret-key"
 
 SCHOOL = {
     "name": "MAMTA MEMORIAL JUNIOR HIGH SCHOOL",
-    "phone1": "+91 9999999999",
-    "phone2": "+91 9999999999",
-    "email": "abcd@gmail.com",
-    "address": "Bandipur, Ambedkar Nagar, Uttar Pradesh",
+    "phone1": "+91 9918743085",
+    "phone2": "+91 8004523475",
+    "email": "mmps0027@gmail.com",
+    "address": "Bandipur, Ambedkar Nagar, Uttar Pradesh 224125",
 }
 
 @app.context_processor
@@ -18,7 +18,7 @@ def inject_globals():
 
 @app.route("/")
 def home():
-    return render_template("index.html", title="Home")
+    return render_template("base.html", title="Home")
 
 @app.route("/about")
 def about():
