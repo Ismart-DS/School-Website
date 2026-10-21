@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Mamta Memorial Junior High School. Discover our academics, facilities, school activities and admissions.">
+  <title>Mamta Memorial Junior High School</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top information bar -->
+  <div class="topbar">
+    <span><i class="fa-solid fa-graduation-cap"></i> Learn Today, Lead Tomorrow</span>
+    <span><i class="fa-regular fa-clock"></i> Quality Education for Every Child</span>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="brand">
+      <img
+        src="https://placehold.co/100x100/087b50/ffffff?text=MM"
+        alt="Mamta Memorial School Logo"
+        class="school-logo"
+      >
+      <span class="brand-text">
+        <strong>MAMTA MEMORIAL</strong>
+        <span>JUNIOR HIGH SCHOOL</span>
+        <small>Knowledge • Discipline • Success</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#academics" class="nav-link">Academics</a>
+      <a href="#facilities" class="nav-link">Facilities</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button class="auth-trigger" id="authTrigger">
+        <i class="fa-regular fa-user"></i> Login & Signup
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home / Hero -->
+    <section class="hero" id="home">
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=2000&q=85"
+        alt="School building and educational campus"
+      >
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow"><i class="fa-solid fa-star"></i> Welcome to Our School</span>
+        <h1>Building Bright Futures Through <span>Quality Education</span></h1>
+        <p>
+          MAMTA MEMORIAL JUNIOR HIGH SCHOOL — nurturing young minds
+          with knowledge, values, creativity and confidence.
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">
+            Discover Our School <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Contact Us <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+        <div class="hero-note">
+          <i class="fa-solid fa-circle-check"></i>
+          A caring environment for learning and growth
+        </div>
+      </div>
+      <a href="#academics" class="scroll-down" aria-label="Explore academics">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- Highlights -->
+    <section class="highlights">
+      <div class="highlight-item">
+        <span class="highlight-icon"><i class="fa-solid fa-book-open"></i></span>
+        <div><strong>Quality Learning</strong><small>Student-focused education</small></div>
+      </div>
+      <div class="highlight-item">
+        <span class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></span>
+        <div><strong>Safe Campus</strong><small>Focus on student safety</small></div>
+      </div>
+      <div class="highlight-item">
+        <span class="highlight-icon"><i class="fa-solid fa-futbol"></i></span>
+        <div><strong>Overall Growth</strong><small>Learning beyond classrooms</small></div>
+      </div>
+      <div class="highlight-item">
+        <span class="highlight-icon"><i class="fa-solid fa-seedling"></i></span>
+        <div><strong>Positive Values</strong><small>Respect and responsibility</small></div>
+      </div>
+    </section>
+
+    <!-- Academics -->
+    <section class="section section-light" id="academics">
+      <div class="section-heading reveal">
+        <span class="section-tag">LEARN & GROW</span>
+        <h2>Our <span>Academics</span></h2>
+        <p>Strong foundations, engaging teaching and a passion for lifelong learning.</p>
+      </div>
+
+      <div class="card-grid academic-grid">
+        <article class="info-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-book"></i></div>
+          <h3>Quality Education</h3>
+          <p>Concept-based teaching that encourages understanding, curiosity and confidence.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <h3>Experienced Teachers</h3>
+          <p>Supportive guidance to help students learn, practise and improve.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-laptop"></i></div>
+          <h3>Smart Learning</h3>
+          <p>Digital learning resources and projector-assisted lessons where available.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>Co-curricular Activities</h3>
+          <p>Activities that encourage creativity, teamwork, communication and leadership.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="section facilities-section" id="facilities">
+      <div class="section-heading reveal">
+        <span class="section-tag">A BETTER SCHOOL EXPERIENCE</span>
+        <h2>Our School <span>Facilities</span></h2>
+        <p>A welcoming environment designed to support learning, wellbeing and development.</p>
+      </div>
+
+      <div class="card-grid facility-grid">
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-bus"></i></div>
+          <div><h3>School Van & Bus</h3><p>Transport facility information for students and parents.</p></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-futbol"></i></div>
+          <div><h3>Playground</h3><p>Space for sports, physical activities and teamwork.</p></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-droplet"></i></div>
+          <div><h3>RO Drinking Water</h3><p>Access to drinking water for students and staff.</p></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-video"></i></div>
+          <div><h3>CCTV Monitoring</h3><p>Campus monitoring to support a safer school environment.</p></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-display"></i></div>
+          <div><h3>Projector Classes</h3><p>Visual learning resources to make lessons more engaging.</p></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div><h3>Clean Environment</h3><p>Emphasis on cleanliness, hygiene and green surroundings.</p></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-computer"></i></div>
+          <div><h3>Computer Education</h3><p>Opportunities to develop digital skills and computer awareness.</p></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+          <div><h3>Library & Reading</h3><p>Encouraging reading habits, imagination and knowledge.</p></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-palette"></i></div>
+          <div><h3>Arts & Activities</h3><p>Creative activities, cultural events and student participation.</p></div>
+        </article>
+        <article class="facility-card reveal">
+          <div class="facility-icon"><i class="fa-solid fa-heart"></i></div>
+          <div><h3>Student Wellbeing</h3><p>A respectful, encouraging environment for children's development.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section section-light" id="gallery">
+      <div class="section-heading reveal">
+        <span class="section-tag">MEMORIES & MOMENTS</span>
+        <h2>School <span>Gallery</span></h2>
+        <p>Explore campus photographs, school activities and video highlights.</p>
+      </div>
+
+      <div class="gallery-tabs" role="group" aria-label="Gallery category">
+        <button class="gallery-tab active" data-filter="images">
+          <i class="fa-regular fa-image"></i> IMAGES
+        </button>
+        <button class="gallery-tab" data-filter="videos">
+          <i class="fa-solid fa-film"></i> VIDEOS
+        </button>
+        <button class="gallery-tab" data-filter="youtube">
+          <i class="fa-brands fa-youtube"></i> YOUTUBE
+        </button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <a href="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1400&q=85"
+          target="_blank" rel="noopener" class="gallery-item" data-category="images">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=700&q=80" alt="School building">
+          <span class="gallery-caption">School Campus</span>
+        </a>
+        <a href="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=85"
+          target="_blank" rel="noopener" class="gallery-item" data-category="images">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="Students learning in a classroom">
+          <span class="gallery-caption">Classroom Learning</span>
+        </a>
+        <a href="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1400&q=85"
+          target="_blank" rel="noopener" class="gallery-item" data-category="images">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=700&q=80" alt="Teacher and students">
+          <span class="gallery-caption">Teaching & Learning</span>
+        </a>
+        <a href="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1400&q=85"
+          target="_blank" rel="noopener" class="gallery-item" data-category="images">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=700&q=80" alt="Students playing outdoors">
+          <span class="gallery-caption">Sports & Activities</span>
+        </a>
+
+        <div class="gallery-item video-placeholder" data-category="videos">
+          <i class="fa-solid fa-circle-play"></i>
+          <h3>School Video</h3>
+          <p>Add your school video link in script.js.</p>
+        </div>
+        <a class="gallery-item youtube-placeholder" data-category="youtube"
+          href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-youtube"></i>
+          <h3>Our YouTube Channel</h3>
+          <p>Replace this link with your school's channel URL.</p>
+        </a>
+      </div>
+      <p class="gallery-note">Demo photographs are used for now. Replace them with actual school photos before publishing.</p>
+    </section>
+
+    <!-- About Us -->
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <span class="section-tag">WHO WE ARE</span>
+        <h2>About <span>Our School</span></h2>
+        <p>Education, values and a vision for a brighter future.</p>
+      </div>
+
+      <div class="about-intro">
+        <div class="about-image reveal">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1100&q=85"
+            alt="School campus">
+          <div class="image-label"><i class="fa-solid fa-school"></i> Our Learning Community</div>
+        </div>
+        <div class="about-copy reveal">
+          <span class="section-tag">WELCOME TO MAMTA MEMORIAL</span>
+          <h3>Where Learning Inspires <span>Possibilities</span></h3>
+          <p>
+            Mamta Memorial Junior High School aims to provide students with
+            a supportive learning environment where they can develop knowledge,
+            confidence, good values and practical skills.
+          </p>
+          <p>
+            We believe every child deserves encouragement and opportunities to
+            grow academically, socially and creatively. Our goal is to work
+            together with parents to support each student's development.
+          </p>
+          <div class="about-points">
+            <span><i class="fa-solid fa-circle-check"></i> Student-focused learning</span>
+            <span><i class="fa-solid fa-circle-check"></i> Discipline and values</span>
+            <span><i class="fa-solid fa-circle-check"></i> Holistic development</span>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="leadership-heading">
+        <span class="section-tag">OUR LEADERSHIP</span>
+        <h3>Meet Our <span>School Leaders</span></h3>
+        <p>Guidance and leadership for our school community.</p>
+      </div>
+
+      <div class="card-grid leader-grid">
+        <article class="leader-card reveal">
+          <img src="https://placehold.co/400x400/e4f2e9/087b50?text=Manager" alt="Manager portrait placeholder">
+          <div class="leader-info">
+            <span class="leader-role">SCHOOL MANAGEMENT</span>
+            <h3>Manager</h3>
+            <p>Supports the school's vision, administration and long-term development.</p>
+          </div>
+        </article>
+        <article class="leader-card reveal">
+          <img src="https://placehold.co/400x400/e4f2e9/087b50?text=Principal" alt="Principal portrait placeholder">
+          <div class="leader-info">
+            <span class="leader-role">ACADEMIC LEADERSHIP</span>
+            <h3>Principal</h3>
+            <p>Guides academic activities, teachers, student learning and school discipline.</p>
+          </div>
+        </article>
+        <article class="leader-card reveal">
+          <img src="https://placehold.co/400x400/e4f2e9/087b50?text=Director" alt="Director portrait placeholder">
+          <div class="leader-info">
+            <span class="leader-role">SCHOOL DIRECTION</span>
+            <h3>Director</h3>
+            <p>Helps guide school planning, improvement and educational initiatives.</p>
+          </div>
+        </article>
+      </div>
+      <p class="gallery-note">Replace the leader names, photographs and biographies with verified school details.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="section-heading reveal">
+        <span class="section-tag">WE ARE HERE TO HELP</span>
+        <h2>Contact <span>Us</span></h2>
+        <p>Have questions about admissions or school facilities? Send us a message.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p>We welcome enquiries from parents and our community.</p>
+          <div class="contact-detail">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <div><strong>School Address</strong><p>Add your complete school address here.</p></div>
+          </div>
+          <div class="contact-detail">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div><strong>Phone Number</strong><p>Add your official school phone number.</p></div>
+          </div>
+          <div class="contact-detail">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <div><strong>Email Address</strong><p>Add your official school email address.</p></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <h3>Send an Enquiry</h3>
+          <label for="contactName">Your Name</label>
+          <input id="contactName" name="name" type="text" placeholder="Enter your name" required>
+          <label for="contactEmail">Email Address</label>
+          <input id="contactEmail" name="email" type="email" placeholder="Enter your email" required>
+          <label for="contactMessage">Your Message</label>
+          <textarea id="contactMessage" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+          <button type="submit" class="btn btn-primary form-submit">
+            Send Enquiry <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p id="contactStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#home" class="footer-brand">
+      <img src="https://placehold.co/80x80/ffffff/087b50?text=MM" alt="School logo">
+      <span><strong>MAMTA MEMORIAL</strong><small>JUNIOR HIGH SCHOOL</small></span>
+    </a>
+    <p>Building knowledge, character and a brighter tomorrow.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#academics">Academics</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Mamta Memorial Junior High School.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Login / Signup modal -->
+  <div class="modal" id="authModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-brand">
+        <img src="https://placehold.co/90x90/087b50/ffffff?text=MM" alt="School logo">
+        <span>MMJHS</span>
+      </div>
+      <h2 id="authTitle">Welcome Back!</h2>
+      <p class="modal-subtitle">Access your school account</p>
+
+      <div class="auth-switch">
+        <button class="auth-tab active" data-auth="login">Login</button>
+        <button class="auth-tab" data-auth="signup">Sign Up</button>
+      </div>
+
+      <form id="authForm">
+        <div class="form-field" id="fullNameField" hidden>
+          <label for="authName">Full Name</label>
+          <input type="text" id="authName" placeholder="Enter your full name" autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="authEmail">Email Address</label>
+          <input type="email" id="authEmail" placeholder="you@example.com" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="authPassword">Password</label>
+          <input type="password" id="authPassword" placeholder="Enter password"
+            minlength="8" autocomplete="current-password" required>
+        </div>
+        <button class="btn btn-primary form-submit" type="submit" id="authSubmit">
+          Login <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <p class="form-status" id="authStatus" aria-live="polite"></p>
+      </form>
+      <p class="demo-note">Demo interface only. Real accounts require a secure backend.</p>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
